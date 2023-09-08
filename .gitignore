@@ -1,2 +1,9 @@
 venv
 .idea
+assignments/source
+assignments/students.csv
+assignments/submitted
+assignments/feedback
+assignments/autograded
+assignments/gradebook.db
+**/.ipynb_checkpoints/

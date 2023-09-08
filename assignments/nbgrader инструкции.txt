@@ -1,0 +1,100 @@
+https://nbgrader.readthedocs.io/en/stable/index.html
+
+https://youtube.com/playlist?list=PLKasxaMD8cFNOhrQtKAtHuATit63RhetN
+
+https://youtube.com/playlist?list=PLY-C51Pcd2cDot0dCH3rvGpCpG2_WFhxY
+
+
+
+NBGrader - это инструмент для проверки заданий и управления оценками в Jupyter Notebook. Он широко используется в образовательных учреждениях для проверки и оценки студенческих работ. Вот краткая инструкция по использованию NBGrader:
+
+1. Установка NBGrader:
+   - Установите Jupyter Notebook, если у вас его нет: `pip install jupyter`.
+   - Установите NBGrader с помощью pip или conda: `pip install nbgrader` или `conda install nbgrader`.
+   - После установки NBGrader будет доступен в командной строке.
+
+   Установка Jupyter Nbgrader Extensions требует выполнения нескольких шагов. Вот краткая инструкция по установке:
+
+   1.1 Установка зависимостей:
+      - Убедитесь, что у вас установлен Python и Jupyter Notebook.
+      - Установите пакет `nodejs` для управления зависимостями JavaScript:
+        - В Ubuntu: `sudo apt-get install nodejs`
+        - В macOS с использованием Homebrew: `brew install node`
+        - В Windows с использованием Chocolatey: `choco install nodejs`
+      - Установите пакет `npm` (Node Package Manager), который используется для установки расширений Jupyter Notebook:
+        - В Ubuntu: `sudo apt-get install npm`
+        - В macOS с использованием Homebrew: `brew install npm`
+        - В Windows с использованием Chocolatey: `choco install npm`
+
+   1.2 Установка Jupyter Nbgrader Extensions:
+
+   Jupyter Nbgrader Extensions предоставляет набор расширений для Jupyter Notebook с графическим интерфейсом, который облегчает создание, проверку и оценку заданий.
+
+      Чтобы использовать Jupyter Nbgrader Extensions:
+
+      1. Установите Jupyter Nbgrader Extensions с помощью pip или conda: `pip install nbgrader --pre` или `conda install nbgrader --pre`.
+
+      2. Запустите Jupyter Notebook, выполнив команду `jupyter notebook`.
+
+      3. В интерфейсе Jupyter Notebook откройте тетрадку и перейдите на вкладку "Nbgrader".
+
+      4. Во вкладке "Nbgrader" вы найдете различные функции, такие как "Create Assignment" (Создать задание), "Form Grader" (Проверка работ), "Validate" (Проверить) и другие.
+
+      5. Используйте соответствующие функции для создания задания, проверки работ студентов и выставления оценок.
+
+      Обратите внимание, что Jupyter Nbgrader Extensions является сторонним расширением и может иметь ограниченную функциональность по сравнению с полной командной строкой NBGrader. Также убедитесь, что у вас установлена подходящая версия Jupyter Notebook и NBGrader для совместимости с Jupyter Nbgrader Extensions.
+      - Откройте терминал или командную строку.
+      - Выполните следующую команду для установки Jupyter Nbgrader Extensions:
+        ```
+        pip install nbgrader --pre
+        jupyter nbextension install --sys-prefix --py nbgrader --overwrite
+        jupyter nbextension enable --sys-prefix --py nbgrader
+        jupyter serverextension enable --sys-prefix --py nbgrader
+        ```
+
+   1.3 Перезапуск Jupyter Notebook:
+      - Если Jupyter Notebook уже запущен, остановите его и перезапустите.
+
+   После установки Jupyter Nbgrader Extensions вы сможете использовать графический интерфейс для создания заданий, проверки работ студентов и выставления оценок.
+
+2. Создание задания:
+   - Создайте новую директорию, которая будет содержать ваше задание. В текущем курсе это директория `assignments`
+   - В командной строке перейдите в эту директорию.
+   - Используйте команду `nbgrader create_assignment <assignment_name>` для создания нового задания.
+   - NBGrader создаст несколько поддиректорий, включая `source`, `release` и `submitted`.
+   - Поместите файлы Jupyter Notebook с заданиями в директорию `source`, создается папка с именем задания и ноутбук с аналогичным именем в этой папке.
+
+3. Настройка метаданных:
+   - В каждом ноутбуке задания добавьте ячейки метаданных с помощью тегов NBGrader. Например, `# [markdown]` для ячеек Markdown и `# [code]` для ячеек кода.
+   - Установите ожидаемые ответы для кодовых ячеек, используя специальные комментарии NBGrader. Например, `# SOLUTION` для ожидаемого ответа.
+
+4. Создание релиза:
+   - Используйте команду `nbgrader generate_assignment <assignment_name>` для создания релиза задания.
+   - Релиз будет содержать те же ноутбуки, что и исходное задание, но с удаленными решениями.
+   - Релиз будет помещен в директорию `release`.
+
+5. Распределение задания:
+   - Поделите студентов на группы или создайте для каждого студента отдельную папку.
+   - Распределите каждому студенту копию ноутбуков из директории `release`.
+
+6. Получение и проверка работ:
+   - Студенты работают в своих копиях ноутбуков.
+   - После выполнения задания они могут отправить работу, переместив свои ноутбуки в директорию `submitted`.
+
+7. Автоматическая проверка:
+   - Используйте команду `nbgrader autograde <assignment_name>` для автоматической проверки работ студентов.
+   - NBGrader выполнит код в каждой кодовой ячейке и сравнит результат с ожидаемым ответом.
+   - Результаты проверки будут сохранены в директории `autograded`.
+
+8. Ручная проверка:
+   - Проверьте работы студентов в директории `autograded`.
+   - Добавьте комментарии и оценки в соответствующих ячейках.
+   - Используйте команду `nbgrader generate_feedback <assignment_name>` для создания отчетов с комментариями.
+
+9. Выставление оценок:
+   - Используйте команду `nbgrader generate_student_feedback <assignment_name>` для создания отчетов с оценками для каждого студента.
+   - Отчеты будут сохранены в директории `feedback`.
+
+Это лишь общая инструкция по использованию NBGrader. NBGrader предоставляет еще больше функций и настроек, которые можно изучить в его документации и youtube (ссылки в начале документа).
+
+

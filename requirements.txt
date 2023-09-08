@@ -2,3 +2,9 @@ streamlit>=0.74.0
 pandas
 openpyxl
 fastapi
+nbgrader
+matplotlib
+torch
+nbgrader
+matplotlib
+torch
