@@ -97,7 +97,7 @@ htmlcode = css_block + '''
 sidebar_content = ['Таймлайн']
 lecture_01 = "Лекция 01. История и задачи NLP"
 lecture_02 = "Лекция 02. Базовая теория нейронных сетей"
-lecture_03 = "Лекция 03. BOW, TF-IDF, поиск, HMM, MEMM, CRF"
+lecture_03 = "Лекция 03. Токенизация, BOW, TF-IDF, поиск, HMM, MEMM, CRF"
 lecture_04 = "Лекция 04. FNN, CNN, word2vec, GloVe, fasttext"
 lecture_05 = "Лекция 05. RNN"
 lecture_06 = "Лекция 06. SEq2seq, attention"
@@ -131,3 +131,14 @@ elif view == lecture_01:
     st.markdown('[Интерфейсы Streamlit](https://docs.streamlit.io/)')
     st.markdown('[Интерфейсы Gradio](https://www.gradio.app/docs/interface)')
     st.markdown('Пример Connected Papers [Attention Is All You Need](https://arxiv.org/abs/1706.03762)')
+    st.markdown('Презентация  [practical-nlp](https://github.com/practical-nlp/practical-nlp-code/blob/master/Ch1/README.md)')
+
+elif view == lecture_02:
+    st.subheader(lecture_02)
+    st.markdown('[Использование памяти](http://localhost:8000/W1)')
+
+elif view == lecture_03:
+    st.subheader(lecture_03)
+    st.markdown('Базовый препроцессинг [jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+
+
