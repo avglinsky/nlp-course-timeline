@@ -136,6 +136,9 @@ elif view == lecture_01:
 elif view == lecture_02:
     st.subheader(lecture_02)
     st.markdown('[Использование памяти](http://localhost:8000/W1)')
+    st.markdown('[Обратное распространение ошибки 1](https://www.youtube.com/watch?v=JwpFvFpbOGc)')
+    st.markdown('[Обратное распространение ошибки 2](https://www.youtube.com/watch?v=EuhoXsuu8SQ)')
+
 
 elif view == lecture_03:
     st.subheader(lecture_03)
