@@ -97,10 +97,10 @@ htmlcode = css_block + '''
 sidebar_content = ['Таймлайн']
 lecture_01 = "Лекция 01. История и задачи NLP"
 lecture_02 = "Лекция 02. Базовая теория нейронных сетей"
-lecture_03 = "Лекция 03. Токенизация, BOW, TF-IDF, поиск, HMM, MEMM, CRF"
+lecture_03 = "Лекция 03. Regex, токенизация, BOW, TF-IDF, поиск, статистический перевод, исправление опечаток, HMM, n-gram модели"
 lecture_04 = "Лекция 04. FNN, CNN, word2vec, GloVe, fasttext"
 lecture_05 = "Лекция 05. RNN"
-lecture_06 = "Лекция 06. SEq2seq, attention"
+lecture_06 = "Лекция 06. Seq2seq, attention"
 lecture_07 = "Лекция 07. Трансформер"
 lecture_08 = "Лекция 08. BERT"
 lecture_09 = "Лекция 09. GPT"
@@ -135,13 +135,51 @@ elif view == lecture_01:
 
 elif view == lecture_02:
     st.subheader(lecture_02)
-    st.markdown('[Использование памяти](http://localhost:8000/W1)')
+    st.markdown('[Neural nets basics presentation Stanford](http://web.stanford.edu/class/cs224n/slides/cs224n-2023-lecture03-neuralnets.pdf)')
+    st.markdown('[Neural nets basics notes Stanford](http://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes03-neuralnets.pdf)')
+    st.markdown('[Использование памяти при обучении нейросетей](http://localhost:8000/W1)')
     st.markdown('[Обратное распространение ошибки 1](https://www.youtube.com/watch?v=JwpFvFpbOGc)')
     st.markdown('[Обратное распространение ошибки 2](https://www.youtube.com/watch?v=EuhoXsuu8SQ)')
 
 
 elif view == lecture_03:
     st.subheader(lecture_03)
+    st.markdown('Regex  [habr](https://habr.com/ru/articles/349860/)')
+
+
+    st.markdown('[Презентация Elasticsearch](https://antonshell.me/doc/Elastic_Examples_Presentation.pdf)')
+    st.markdown('[Elasticsearch API](https://www.elastic.co/guide/en/enterprise-search-clients/python/7.17/app-search-api.html#app-search-search-apis)')
+    st.markdown('[HMM](https://logic.pdmi.ras.ru/~sergey/teaching/mlspsu21/12-hmm.pdf)')
+    st.markdown('[HMM Video](https://www.youtube.com/watch?v=kqSzLo9fenk&t=1735s)')
+
+elif view == lecture_04:
+    st.subheader(lecture_04)
     st.markdown('Базовый препроцессинг [jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
 
+elif view == lecture_05:
+    st.subheader(lecture_05)
+    st.markdown('Базовый препроцессинг [jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
 
+elif view == lecture_06:
+    st.subheader(lecture_07)
+    st.markdown('Иллюстрации [Jay Alammar](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+
+elif view == lecture_08:
+    st.subheader(lecture_08)
+    st.markdown('Иллюстрации [Jay Alammar](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+
+elif view == lecture_09:
+    st.subheader(lecture_09)
+    st.markdown('Базовый препроцессинг [jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+
+elif view == lecture_10:
+    st.subheader(lecture_10)
+    st.markdown('Базовый препроцессинг [jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+
+elif view == lecture_11:
+    st.subheader(lecture_11)
+    st.markdown('Базовый препроцессинг [jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+
+elif view == lecture_12:
+    st.subheader(lecture_12)
+    st.markdown('Базовый препроцессинг [jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
