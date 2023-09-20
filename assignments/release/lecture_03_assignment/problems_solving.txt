@@ -1,0 +1,14 @@
+On Linux, you can increase the limits by running the following command as root:
+
+sysctl -w vm.max_map_count=262144
+
+do same in windows
+
+In Windows, you can increase the `vm.max_map_count` equivalent setting for Elasticsearch by modifying
+
+by wsl
+
+в терминале:
+
+wsl
+sudo vm.max_map_count=262144

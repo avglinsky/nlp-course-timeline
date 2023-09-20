@@ -1,0 +1,18 @@
+#https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html
+# Elasticsearch Cluster Settings
+cluster.name: elasticsearch
+node.name: node-1
+cluster.initial_master_nodes: ["node-1"]
+
+# Network Settings
+network.host: 0.0.0.0
+http.port: 9200
+transport.port: 9300
+
+# Node Roles
+node.roles: ["data", "master"]
+
+# Security Settings (Basic)
+xpack.security.enabled: false
+xpack.security.transport.ssl.enabled: false
+xpack.security.http.ssl.enabled: false
