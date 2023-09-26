@@ -99,14 +99,14 @@ lecture_01 = "Лекция 01. История и задачи NLP"
 lecture_02 = "Лекция 02. Базовая теория нейронных сетей"
 lecture_03 = "Лекция 03. Regex, токенизация, BOW, TF-IDF, поиск, статистический перевод, исправление опечаток, HMM, n-gram модели"
 lecture_04 = "Лекция 04. FNN, CNN, word2vec, GloVe, fasttext"
-lecture_05 = "Лекция 05. RNN"
+lecture_05 = "Лекция 05. RNN, сеть Хопфилда, Vanilla RNN, LSTM, GRU, SRU, bidirectional RNN"
 lecture_06 = "Лекция 06. Seq2seq, attention"
-lecture_07 = "Лекция 07. Трансформер"
-lecture_08 = "Лекция 08. BERT"
-lecture_09 = "Лекция 09. GPT"
-lecture_10 = "Лекция 10. LLM"
-lecture_11 = "Лекция 11. RL в NLP, Knowledge graphs"
-lecture_12 = "Лекция 12. Multimodality"
+lecture_07 = "Лекция 07. Трансформер, BERT, BART, T5"
+lecture_08 = "Лекция 08. GPT"
+lecture_09 = "Лекция 09. LLM"
+lecture_10 = "Лекция 10. RL в NLP, Knowledge graphs"
+lecture_11 = "Лекция 11. Multimodality"
+lecture_12 = "Лекция 12. Итоговое обобщающее занятие"
 
 sidebar_content.extend([lecture_01, lecture_02, lecture_03,
                         lecture_04, lecture_05, lecture_06,
@@ -145,8 +145,6 @@ elif view == lecture_02:
 elif view == lecture_03:
     st.subheader(lecture_03)
     st.markdown('Regex  [habr](https://habr.com/ru/articles/349860/)')
-
-
     st.markdown('[Презентация Elasticsearch](https://antonshell.me/doc/Elastic_Examples_Presentation.pdf)')
     st.markdown('[Elasticsearch API](https://www.elastic.co/guide/en/enterprise-search-clients/python/7.17/app-search-api.html#app-search-search-apis)')
     st.markdown('[HMM](https://logic.pdmi.ras.ru/~sergey/teaching/mlspsu21/12-hmm.pdf)')
@@ -154,7 +152,12 @@ elif view == lecture_03:
 
 elif view == lecture_04:
     st.subheader(lecture_04)
-    st.markdown('Базовый препроцессинг [jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+    st.markdown('[A Neural Probabilistic Language Model (FNN)]('
+                'https://www.researchgate.net/publication/2413241_A_Neural_Probabilistic_Language_Model)')
+    st.markdown('[CNN (страница 8)](http://web.stanford.edu/class/cs224n/slides/cs224n-2023-lecture13-CNN-TreeRNN.pdf)')
+    st.markdown('[Embeddings 1 (страница 16)](http://web.stanford.edu/class/cs224n/slides/cs224n-2023-lecture01-wordvecs1.pdf)')
+    st.markdown('[Embeddings 2 (страница 5)](http://web.stanford.edu/class/cs224n/slides/cs224n-2023-lecture02-wordvecs2.pdf)')
+
 
 elif view == lecture_05:
     st.subheader(lecture_05)
@@ -163,6 +166,10 @@ elif view == lecture_05:
 elif view == lecture_06:
     st.subheader(lecture_07)
     st.markdown('Иллюстрации [Jay Alammar](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+
+elif view == lecture_07:
+    st.subheader(lecture_07)
+    st.markdown('HH course [Jay Alammar](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
 
 elif view == lecture_08:
     st.subheader(lecture_08)
