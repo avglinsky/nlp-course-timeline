@@ -14,10 +14,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 # must be called as first command
-try:
-    st.set_page_config(layout="wide")
-except:
-    st.beta_set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 
 
 # parameters
@@ -58,19 +55,20 @@ df["Year"] = pd.to_numeric(df["Year"], errors='coerce').astype(int)
 events = df.to_dict(orient='records')
 
 for event in events:
-    event_modified = {
-        "media": {"url": "", "caption": ""},
-        "start_date": {"year": "", "month": "", "day": ""},
-        "text": {"headline": "", "text": ""}
-      }
-    event_modified["media"]["url"] = event.get("Media", "")
-    event_modified["media"]["caption"] = event.get("Media Caption", "")
-    event_modified["start_date"]["year"] = event["Year"]
-    event_modified["start_date"]["month"] = event.get("Month", "")
-    event_modified["start_date"]["day"] = event.get("Day", "")
-    event_modified["text"]["headline"] = event.get("Headline", "")
-    event_modified["text"]["text"] = event.get("Text", "")
-    data_to_render["events"].append(event_modified)
+    if event.get("Lecture_num", "0") == 8:
+        event_modified = {
+            "media": {"url": "", "caption": ""},
+            "start_date": {"year": "", "month": "", "day": ""},
+            "text": {"headline": "", "text": ""}
+          }
+        event_modified["media"]["url"] = event.get("Media", "")
+        event_modified["media"]["caption"] = event.get("Media Caption", "")
+        event_modified["start_date"]["year"] = event["Year"]
+        event_modified["start_date"]["month"] = event.get("Month", "")
+        event_modified["start_date"]["day"] = event.get("Day", "")
+        event_modified["text"]["headline"] = event.get("Headline", "")
+        event_modified["text"]["text"] = event.get("Text", "")
+        data_to_render["events"].append(event_modified)
 
 
 json_text = json.dumps(data_to_render, indent=4, ensure_ascii=False)
@@ -173,7 +171,20 @@ elif view == lecture_07:
 
 elif view == lecture_08:
     st.subheader(lecture_08)
-    st.markdown('Иллюстрации [Jay Alammar](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+    st.markdown('[The Illustrated GPT-2 (Visualizing Transformer Language Models)](https://jalammar.github.io/illustrated-gpt2/)')
+    st.markdown('[How GPT3 Works - Visualizations and Animations](https://jalammar.github.io/how-gpt3-works-visualizations-animations/)')
+    st.markdown('[From GPT-1 to GPT-4: All OpenAI’s GPT Models Explained](https://chatgptplus.blog/all-gpt-models/)')
+    st.markdown('[The Journey of Open AI GPT models](https://medium.com/walmartglobaltech/the-journey-of-open-ai-gpt-models-32d95b7b7fb2)')
+    st.markdown('[GPT для чайников: от токенизации до файнтюнинга](https://habr.com/ru/articles/599673/)')
+    st.markdown('[OpenAI GPT-n models](https://research.aimultiple.com/gpt/)')
+    st.markdown('[The Evolution of GPT Models](https://businessolution.org/gpt-models/)')
+    st.markdown('[OpenAI GPT Models](https://leimao.github.io/article/OpenAI-GPT-Models/)')
+    st.markdown('[GPT-3.5 + ChatGPT: An illustrated overview](https://lifearchitect.ai/chatgpt/)')
+    st.markdown('[GPT-3.5 model architecture](https://iq.opengenus.org/gpt-3-5-model/)')
+    st.markdown('[https://github.com/karpathy/nanoGPT](https://github.com/karpathy/nanoGPT)')
+    st.markdown('[https://github.com/karpathy/minGPT](https://github.com/karpathy/minGPT)')
+    st.markdown('[https://keras.io/examples/generative/text_generation_gpt/](https://keras.io/examples/generative/text_generation_gpt/)')
+    st.markdown('[https://jaykmody.com/blog/gpt-from-scratch/](https://jaykmody.com/blog/gpt-from-scratch/)')
 
 elif view == lecture_09:
     st.subheader(lecture_09)
