@@ -102,7 +102,7 @@ lecture_06 = "Лекция 06. Seq2seq, attention"
 lecture_07 = "Лекция 07. Трансформер, BERT, BART, T5"
 lecture_08 = "Лекция 08. GPT"
 lecture_09 = "Лекция 09. LLM"
-lecture_10 = "Лекция 10. RL в NLP, Knowledge graphs"
+lecture_10 = "Лекция 10. Современные практики применения NLP"
 lecture_11 = "Лекция 11. Multimodality"
 lecture_12 = "Лекция 12. Итоговое обобщающее занятие"
 
@@ -188,7 +188,12 @@ elif view == lecture_08:
 
 elif view == lecture_09:
     st.subheader(lecture_09)
-    st.markdown('Базовый препроцессинг [jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+    st.markdown('[PEFT](https://huggingface.co/docs/peft/index)')
+    st.markdown('[PEFT github](https://github.com/huggingface/peft)')
+    st.markdown('[verbalist](https://github.com/dmitrymailk/verbalist)')
+    st.markdown('[saiga](https://huggingface.co/IlyaGusev/saiga2_7b_lora)')
+    st.markdown('[self_instruct](https://github.com/IlyaGusev/rulm/tree/master/self_instruct)')
+    st.markdown('[Mistral AI](https://docs.mistral.ai/)')
 
 elif view == lecture_10:
     st.subheader(lecture_10)
