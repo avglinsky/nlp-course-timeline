@@ -201,8 +201,30 @@ elif view == lecture_10:
 
 elif view == lecture_11:
     st.subheader(lecture_11)
-    st.markdown('Базовый препроцессинг [jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+    st.markdown('[Как работает метод главных компонент (PCA) на простом примере](https://habr.com/ru/articles/304214/)')
+    st.markdown('[t-SNE](https://medium.com/nuances-of-programming/алгоритм-машинного-обучения-t-sne-отличный-инструмент-для-снижения-размерности-в-python-f87af7eac9fe)')
+    st.markdown('[Вариационные автокодировщики: теория и рабочий код](https://habr.com/ru/articles/429276/)')
+    st.markdown('[Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239)')
+    st.markdown('[Denoising Diffusion Implicit Models](https://arxiv.org/abs/2010.02502)')
+    st.markdown('[High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752)')
+    st.markdown('[CLIP](https://openai.com/research/clip)')
+    st.markdown('[Нейронная Сеть CLIP от OpenAI](https://habr.com/ru/articles/539312/)')
+    st.markdown('[Understanding CLIP by OpenAI](https://cv-tricks.com/how-to/understanding-clip-by-openai/)')
+    st.markdown('[Как работает Stable Diffusion: объяснение в картинках](https://habr.com/ru/articles/693298/)')
+    st.markdown('[The Illustrated Stable Diffusion](https://jalammar.github.io/illustrated-stable-diffusion/)')
+    st.markdown('[GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models](https://arxiv.org/abs/2112.10741)')
+    st.markdown('[Hierarchical Text-Conditional Image Generation with CLIP Latents](https://arxiv.org/abs/2204.06125)')
+    st.markdown('[Как работает ControlNet. Контролируемая генерация изображений](https://habr.com/ru/companies/ruvds/articles/719348/)')
+    st.markdown('[Palette: Image-to-Image Diffusion Models](https://arxiv.org/abs/2111.05826)')
+    st.markdown('[SDEdit: Guided Image Synthesis and Editing with Stochastic Differential Equations](https://arxiv.org/abs/2108.01073)')
+    st.markdown('[Kandinsky 2.0 — первая мультиязычная диффузия для генерации изображений по тексту](https://habr.com/ru/companies/sberbank/articles/701162/)')
+    st.markdown('[Kandinsky 2.1, или Когда +0,1 значит очень много](https://habr.com/ru/companies/sberbank/articles/725282/)')
+    st.markdown('[Kandinsky 2.2 — новый шаг в направлении фотореализма](https://habr.com/ru/companies/sberbank/articles/747446/)')
+    st.markdown('[High-Resolution Video Synthesis with Latent Diffusion Models](https://research.nvidia.com/labs/toronto-ai/VideoLDM/)')
+    st.markdown('[Flexible Diffusion Modeling of Long Videos](https://arxiv.org/abs/2205.11495)')
+    st.markdown('[3D Shape Generation and Completion through Point-Voxel Diffusion](https://arxiv.org/abs/2104.03670)')
 
 elif view == lecture_12:
     st.subheader(lecture_12)
-    st.markdown('Базовый препроцессинг [jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/2_TextProc_Mar_25_2021.pdf)')
+
+

@@ -11,6 +11,7 @@ spacy
 streamlit>=0.74.0
 tokenizers
 torch
-torch
+torchvision
 uvicorn
 rank-bm25
+jupyter

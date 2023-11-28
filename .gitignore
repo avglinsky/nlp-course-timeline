@@ -1,5 +1,6 @@
 venv
 .idea
+.vscode
 assignments/source
 assignments/students.csv
 assignments/submitted
