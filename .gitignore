@@ -1,7 +1,6 @@
 venv
 env
 .idea
-.vscode
 assignments/source
 assignments/students.csv
 assignments/submitted

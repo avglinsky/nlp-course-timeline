@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "python: ensure flask is running",
+        "command": "pipenv",
+        "type": "shell",
+        "args": [
+          "run",
+          "flask",
+          "run",
+          "--no-debugger"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "python: stop flask",
+        "command": "pkill",
+        "type": "shell",
+        "args": [
+          "-f",
+          "flask run"
+        ],
+        "group": "test",
+        "isBackground": true,
+        "problemMatcher": []
+      }
+    ]
+  }
+  

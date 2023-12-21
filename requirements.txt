@@ -1,7 +1,5 @@
 fastapi
 matplotlib
-matplotlib
-nbgrader
 nbgrader
 nltk
 openpyxl
